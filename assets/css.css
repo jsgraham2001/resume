@@ -1,0 +1,166 @@
+/* Resume + Final Game */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: #164A41;
+    box-shadow: 0px 2px 10px black;
+}
+
+.bar li, .bar a { 
+  height: 40px;
+  line-height: 50px;
+}
+.menu {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.menu a, .menu a:visited {
+  color: #FFFFFF;
+}
+.menu a:hover, .menu a:target {
+  color: #9DC88D;
+}
+.menu-items {
+  display: inline-block;
+}
+.main-button {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+a.main-button, a:visited.main-button {
+  color: #e0e0e0;
+}
+.menu-items li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.menu-items a {
+  text-decoration: none;
+}
+.show, .hide {
+  display: none;
+  padding-left: 15px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center left;
+  color: #dde1e2;
+}
+.show {
+  background-image: url(assets/down-arrow-icon.png);
+}
+.hide {
+  background-image: url(assets/up-arrow-icon.png);
+}
+
+@media only screen and (max-width: 800px) {
+  .menu { 
+    position: relative;
+    width: 100%;
+  }
+  .main-button {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    margin-left: 0px;
+  }
+  .menu-items {
+    display: none; 
+    width: 100%;
+    margin-top: 50px;
+    background-color: #4D774E;
+    box-shadow: 0px 2px 10px black;
+    
+  }
+  .menu-items li {
+    display: block;
+    text-align: center;
+  }
+  .show, .hide {  
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+  .show {
+    display: inline-block;
+  }
+  .hide {
+    display: none;
+  }
+  #menu:target .show {
+    display: none;
+  }
+  #menu:target .hide, #menu:target .menu-items {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 220px) {
+  .main-button, .show, .hide {
+    font-size: 14px;
+  }
+}
+
+body {
+font-family: Verdana, sans-serif;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+section {
+    align-content: center;
+    padding: 10px 60px 10px 60px;
+    box-shadow: 0px 2px 10px black;
+    background-color: #9DC88D;
+}
+
+h3 {
+    color: #164A41;
+    
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+figcaption{
+    font-size: small;
+    text-align: center;
+}
+
+
+
+audio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+footer{
+    color: rgb(253, 250, 238);
+    background-color: darkgreen;
+    padding: 20px;
+    box-shadow: 2px 2px 4px #000000;
+}
