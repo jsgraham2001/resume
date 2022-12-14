@@ -1,4 +1,4 @@
-/* Resume + Final Game */
+/* Finale Website */
 
 * {
     margin: 0;
@@ -43,8 +43,11 @@
 
 .main-button {
     display: inline-block;
+    vertical-align: top;
     margin-right: 20px;
     margin-left: 10px;
+    width: 155px; /* 155 */
+    height: 50px;
 }
 
 a.main-button, a:visited.main-button {
@@ -67,15 +70,8 @@ a.main-button, a:visited.main-button {
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center left;
-    color: #dde1e2;
-}
-
-.show {
-    background-image: url(assets/down-arrow-icon.png);
-}
-
-.hide {
-    background-image: url(assets/up-arrow-icon.png);
+    color: #ffffff;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 800px) {
@@ -136,13 +132,13 @@ a.main-button, a:visited.main-button {
 body {
     font-family: Verdana, sans-serif;
     line-height: 25px;
-    background-color: #9DC88D;
+    background-color: #ffffff;
     margin-bottom: 0px;
 }
 
 .title {
-    padding-top: 250px;
-    padding-bottom: 250px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     position: relative;
     background: #9DC88D url(assets/Bliss4k.jpg) no-repeat center;
     background-size: cover;
@@ -153,7 +149,7 @@ h1 {
     font-size: 36px;
     line-height: 46px;
     color: #164a41;
-    background-color: rgba(157, 200, 141, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 10px;
   }
 
@@ -165,7 +161,7 @@ h3 {
     width: 90%;
     max-width: 960px;
     margin: 0 auto;
-    background-color: #9DC88D;
+    background-color: #ffffff;
     min-height: 250px;
     padding: 10px;
     margin-bottom: 50px;
@@ -175,7 +171,7 @@ h3 {
     padding: 10px;
 }
 
-img {
+#golf-cart {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -192,6 +188,7 @@ figcaption{
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 0 auto;
 }
 
 footer{
@@ -203,4 +200,28 @@ footer{
     background-color: #164A41;
     color: #FFFFFF;
     padding-top: 20px;
+}
+
+#footer-items > * {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* Game CSS */
+
+#grass {
+    display: none;
+}
+
+#soccer-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#soccer {
+    width: 100%;
+    height: 100%;
 }
